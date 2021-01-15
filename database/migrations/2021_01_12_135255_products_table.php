@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Carbon;
 
 class ProductsTable extends Migration
 {
@@ -20,6 +21,22 @@ class ProductsTable extends Migration
             $table->text('description')->nullable();
             $table->timestamps();
         });
+
+        DB::table('products')->insert([
+
+            [
+                'name' => 'Ledusskapis',
+                'description' => 'Apraksts ledusskapim',
+            ],
+            [
+                'name' => 'Veļas mašīna',
+                'description' => 'Kaut kāda veļas mašīna',
+            ],
+            [
+                'name' => 'Gulta',
+                'description' => 'King size',
+            ]
+    ]);
     }
 
     /**
