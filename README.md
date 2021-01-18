@@ -1,3 +1,4 @@
+## Routes
 API urls:
 Specifisks produkts ar atribūtiem:
 http://*/getProductWithAttributes?product_id=1
@@ -14,9 +15,14 @@ http://*/getProductsViewEloquent
 Produkti HTML tabulā no RAW SQL:
 http://*/getProductsViewSQL
 
+## Package installation
+
+Require `allans/productapi` using composer.
 
 
-Uzdevums:
+
+##Uzdevums:
+
 1 - Izveidot “bitbucket/github” repozitoriju “visi_forši_produkti”.
 2 - Izveidot Laravel projektu
 3 - Ieviest autorizāciju.
